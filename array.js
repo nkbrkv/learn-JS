@@ -6,7 +6,7 @@
             return Math.floor(Math.random() * (max - min + 1)) + min; 
         }
 
-//Функция задаёт i-тое кол-во значений в диапазоне 1-20 в массиве A 
+//Функция задаёт i-тое кол-во значений в массиве A 
         function randomArray (A) {
             var i = 10;
             for(let j = 0; j < i; j++) {
