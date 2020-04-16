@@ -1,7 +1,16 @@
-//        function declaration
-        function amount(x, y) { return x + y; };
-//        function expression
-        let multiplication = function(x, y) { return x*y; };
-//        вывод информации в консоль
-        console.log(amount(10, 5));
-        console.log(multiplication(10, 5));
+let arg = [1,2,3,4,5,6,7,8,9,10];
+//declaration
+        function amount(x, y, z=10) { return x + y * z; }; 
+//expression
+        let arrayFunc = function(x) {
+            
+                for (i=0; i <= arg.length; i++) { 
+                    if (x == arg[i]) { 
+                        console.log(`Значение ${x} входит в данный массив`);
+                    } else {
+                        console.log(arg[i]);
+                    }
+                }
+             };
+        console.log(amount(10, 5)); 
+        arrayFunc(7);
